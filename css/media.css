@@ -1,0 +1,77 @@
+@media screen and (max-width:768px) {
+    .menu .nav-btn {
+        display: block;
+    }
+
+    .menu .container {
+        justify-content: space-between;
+        padding: 0px 15px;
+    }
+
+    .menu .container .menu-items {
+        display: none;
+    }
+
+    .menu {
+        position: relative;
+    }
+
+    .menu .container .menu-items.active-menu {
+        display: block;
+        flex-direction: column;
+        position: fixed;
+        top: 85px;
+        left: 50%;
+        transform: translate(-50%,0%);
+        height: auto;
+        width: 50%;
+        padding-left: 0px;
+        background-color: var(--bg-white);
+        box-shadow: var(--shadow-sm);
+        transition: all 1s ease-in;
+    }
+
+    /* home section */
+    #home .home-content {
+        flex-direction: column;
+    }
+
+    #home .home-content .desg {
+        font-size: 0.8rem;
+    }
+
+    /* about */
+    .about .title p {
+        text-align: justify;
+    }
+
+    .about .about-content {
+        flex-direction: column;
+    }
+
+    .about-content .left img {
+        max-width: 50%;
+    }
+
+    .about-content .about-list {
+        flex-direction: column;
+    }
+    
+    .resume-data,
+    .resume-data .education {
+        flex-direction: column;
+    }
+
+    .contact .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-content .left,
+    .contact-content .right {
+        width: 100%;
+    }
+
+    .footer .container {
+        flex-direction: column;
+    }
+}
